@@ -67,6 +67,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="abstract_window.h" />
+    <ClInclude Include="brush.h" />
     <ClInclude Include="message_pump.h" />
     <ClInclude Include="win32lib.h" />
     <ClInclude Include="win32lib_forms.h" />
@@ -74,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract_window.cpp" />
+    <ClCompile Include="brush.cpp" />
     <ClCompile Include="message_pump.cpp" />
     <ClCompile Include="window_class_ex.cpp" />
   </ItemGroup>

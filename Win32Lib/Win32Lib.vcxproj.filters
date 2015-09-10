@@ -42,6 +42,9 @@
     <ClInclude Include="win32lib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="brush.h">
+      <Filter>Header Files\GDI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract_window.cpp">
@@ -52,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="message_pump.cpp">
       <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="brush.cpp">
+      <Filter>Source Files\GDI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
