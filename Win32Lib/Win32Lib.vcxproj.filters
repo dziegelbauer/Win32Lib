@@ -30,9 +30,21 @@
     <ClInclude Include="abstract_window.h">
       <Filter>Header Files\Forms</Filter>
     </ClInclude>
+    <ClInclude Include="window_class_ex.h">
+      <Filter>Header Files\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="message_pump.h">
+      <Filter>Header Files\Forms</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract_window.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="window_class_ex.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="message_pump.cpp">
       <Filter>Source Files\Forms</Filter>
     </ClCompile>
   </ItemGroup>
