@@ -36,6 +36,12 @@
     <ClInclude Include="message_pump.h">
       <Filter>Header Files\Forms</Filter>
     </ClInclude>
+    <ClInclude Include="win32lib_forms.h">
+      <Filter>Header Files\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="win32lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract_window.cpp">

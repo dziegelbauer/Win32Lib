@@ -3,6 +3,7 @@
 
 abstract_window::abstract_window()
 {
+	_hinstance = GetModuleHandle(NULL);
 }
 
 
@@ -37,16 +38,16 @@ bool abstract_window::Create()
 	// we'll just assume CreateWindowEx ()'s parameters are protected members of AbstractWindow
 	_hwnd = ::CreateWindowEx(
 		_style_ex,
-		_className,
-		_windowName,
+		_class_name.c_str(),
+		_window_text.c_str(),
 		_style,
 		_window_rect.left,
 		_window_rect.top,
 		_window_rect.right,
 		_window_rect.bottom,
 		_parent->get_hwnd(),
-		_hMenu,
-		_hInstance,
+		_hmenu,
+		_hinstance,
 		this                    // pointer to this class instance
 		);
 

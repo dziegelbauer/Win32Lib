@@ -22,5 +22,9 @@ protected:
 	RECT _window_rect;
 	DWORD _style;
 	DWORD _style_ex;
+	std::string _class_name;
+	std::string _window_text;
+	HINSTANCE _hinstance;
+	HMENU _hmenu;
 };
 
