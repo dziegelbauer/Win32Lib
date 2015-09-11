@@ -3,28 +3,7 @@
 
 namespace win32lib
 {
-	window_class_ex::window_class_ex(HINSTANCE hInst, const std::string* className)
-	{
-		hInstance = hInst;
-		// all messages for windows belonging to this Window Class will get sent to msgRouter
-		lpfnWndProc = abstract_window::msgRouter;
-		char* buffer = new char[className->length + 1];
-		className->copy(buffer, className->length, 0);
-		buffer[className->length] = '\0';
-		lpszClassName = buffer;
-
-		lpszMenuName = 0;
-		cbSize = sizeof (WNDCLASSEX);
-		cbClsExtra = 0;
-		cbWndExtra = 0;
-		style = 0;
-		hIcon = ::LoadIcon(NULL, IDI_APPLICATION);
-		hIconSm = ::LoadIcon(NULL, IDI_APPLICATION);
-		hCursor = ::LoadCursor(NULL, IDC_ARROW);
-		hbrBackground = (HBRUSH) ::GetStockObject(COLOR_BTNFACE);
-	}
-
-	window_class_ex::window_class_ex(const std::string* className)
+	window_class_ex::window_class_ex(const std::string* className, brush* window_brush)
 	{
 		hInstance = GetModuleHandle(NULL);
 		// all messages for windows belonging to this Window Class will get sent to msgRouter
@@ -42,7 +21,10 @@ namespace win32lib
 		hIcon = ::LoadIcon(NULL, IDI_APPLICATION);
 		hIconSm = ::LoadIcon(NULL, IDI_APPLICATION);
 		hCursor = ::LoadCursor(NULL, IDC_ARROW);
-		hbrBackground = (HBRUSH) ::GetStockObject(COLOR_BTNFACE);
+		if (!window_brush)
+			hbrBackground = window_brush->get_handle();
+		else
+			hbrBackground = (HBRUSH) ::GetStockObject(COLOR_BTNFACE);
 	}
 
 	window_class_ex::~window_class_ex()

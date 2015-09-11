@@ -6,8 +6,7 @@ namespace win32lib
 	{
 		_hinstance = GetModuleHandle(NULL);
 	}
-
-
+	
 	abstract_window::~abstract_window()
 	{
 	}
