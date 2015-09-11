@@ -24,6 +24,7 @@ namespace win32lib
 		void set_style(DWORD);
 		void set_style(window_styles);
 		void set_ex_style(DWORD);
+		void set_ex_style(window_styles_ex);
 	protected:
 		HWND _hwnd;
 		abstract_window* _parent;

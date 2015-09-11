@@ -34,4 +34,35 @@ namespace win32lib
 		popupwindow = WS_POPUPWINDOW,
 		chioldwindow = WS_CHILDWINDOW
 	};
+
+	enum window_styles_ex : DWORD
+	{
+		dlgmodalframe = WS_EX_DLGMODALFRAME,
+		noparentnotify = WS_EX_NOPARENTNOTIFY,
+		topmost = WS_EX_TOPMOST,
+		acceptfiles = WS_EX_ACCEPTFILES,
+		transparent = WS_EX_TRANSPARENT,
+		mdichild = WS_EX_MDICHILD,
+		toolwindow = WS_EX_TOOLWINDOW,
+		windowedge = WS_EX_WINDOWEDGE,
+		clientedge = WS_EX_CLIENTEDGE,
+		contexthelp = WS_EX_CONTEXTHELP,
+		right = WS_EX_RIGHT,
+		left = WS_EX_LEFT,
+		rtlreading = WS_EX_RTLREADING,
+		ltrreading = WS_EX_LTRREADING,
+		leftscrollbar = WS_EX_LEFTSCROLLBAR,
+		rightscrollbar = WS_EX_RIGHTSCROLLBAR,
+		controlparent = WS_EX_CONTROLPARENT,
+		staticedge = WS_EX_STATICEDGE,
+		appwindow = WS_EX_APPWINDOW,
+		overlappedwindow = WS_EX_OVERLAPPEDWINDOW,
+		palettewindow = WS_EX_PALETTEWINDOW,
+		layered = WS_EX_LAYERED,
+		noinheritlayout = WS_EX_NOINHERITLAYOUT,
+		noredirectionbitmap = WS_EX_NOREDIRECTIONBITMAP,
+		layoutrtl = WS_EX_LAYOUTRTL,
+		composited = WS_EX_COMPOSITED,
+		noactivate = WS_EX_NOACTIVATE
+	};
 }

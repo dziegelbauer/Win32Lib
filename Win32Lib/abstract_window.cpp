@@ -88,4 +88,8 @@ namespace win32lib
 	{
 		_style_ex = style;
 	}
+	void abstract_window::set_ex_style(window_styles_ex style)
+	{
+		_style_ex = style;
+	}
 }
