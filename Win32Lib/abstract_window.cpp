@@ -80,6 +80,10 @@ namespace win32lib
 	{
 		_style = style;
 	}
+	void abstract_window::set_style(window_styles style)
+	{
+		_style = style;
+	}
 	void abstract_window::set_ex_style(DWORD style)
 	{
 		_style_ex = style;

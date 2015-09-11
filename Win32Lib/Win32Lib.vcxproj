@@ -68,6 +68,7 @@
   <ItemGroup>
     <ClInclude Include="abstract_window.h" />
     <ClInclude Include="brush.h" />
+    <ClInclude Include="form_enums.h" />
     <ClInclude Include="message_pump.h" />
     <ClInclude Include="win32lib.h" />
     <ClInclude Include="win32lib_forms.h" />

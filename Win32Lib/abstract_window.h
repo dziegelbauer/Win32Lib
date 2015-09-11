@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include <string>
 #include <memory>
+#include "form_enums.h"
 
 namespace win32lib
 {
@@ -21,6 +22,7 @@ namespace win32lib
 		void set_rect(RECT*);
 		void set_rect(LONG, LONG, LONG, LONG);
 		void set_style(DWORD);
+		void set_style(window_styles);
 		void set_ex_style(DWORD);
 	protected:
 		HWND _hwnd;

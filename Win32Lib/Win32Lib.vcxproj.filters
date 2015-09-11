@@ -45,6 +45,9 @@
     <ClInclude Include="brush.h">
       <Filter>Header Files\GDI</Filter>
     </ClInclude>
+    <ClInclude Include="form_enums.h">
+      <Filter>Header Files\Forms</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract_window.cpp">
