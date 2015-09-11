@@ -18,6 +18,10 @@ namespace win32lib
 		bool Create();
 		int Show();
 		HWND get_hwnd() { return _hwnd };
+		void set_rect(RECT*);
+		void set_rect(LONG, LONG, LONG, LONG);
+		void set_style(DWORD);
+		void set_ex_style(DWORD);
 	protected:
 		HWND _hwnd;
 		abstract_window* _parent;

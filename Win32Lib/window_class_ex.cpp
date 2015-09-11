@@ -3,7 +3,7 @@
 
 namespace win32lib
 {
-	window_class_ex::window_class_ex(const std::string* className, brush* window_brush)
+	window_class_ex::window_class_ex(const std::string* className, brush* window_brush = NULL)
 	{
 		hInstance = GetModuleHandle(NULL);
 		// all messages for windows belonging to this Window Class will get sent to msgRouter
